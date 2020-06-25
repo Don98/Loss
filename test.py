@@ -4,6 +4,7 @@ import collections
 import numpy as np
 
 import torch
+torch.cuda.set_device(1)
 import torch.optim as optim
 from torchvision import transforms
 
@@ -20,7 +21,7 @@ assert torch.__version__.split('.')[0] == '1'
 # import Don
 print('CUDA available: {}'.format(torch.cuda.is_available()))
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 def main(args=None):
     model_name = "model_final1"
@@ -106,7 +107,6 @@ def main(args=None):
         raise ValueError('Unsupported model depth, must be one of 18, 34, 50, 101, 152')
     
     use_gpu = True
-
     if use_gpu:
         if torch.cuda.is_available():
             cnn3 = cnn3.cuda()
