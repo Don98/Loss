@@ -75,10 +75,10 @@ def main(args=None):
         if parser.coco_path is None:
             raise ValueError('Must provide --coco_path when training on COCO,')
 
-        dataset_train = VocDataset(parser.coco_path, set_name='2007',name = "train2",
+        dataset_train = VocDataset(parser.coco_path, set_name='2007',name = "train",
                                     # transform=transforms.Compose([Normalizer(), Augmenter(), Resizer([480,600])]))
                                     transform=transforms.Compose([Normalizer(), Augmenter(), Resizer([0,0])]))
-        dataset_val = VocDataset(parser.coco_path, set_name='2007',name = "trainval2",
+        dataset_val = VocDataset(parser.coco_path, set_name='2007',name = "val",
                                   transform=transforms.Compose([Normalizer(), Resizer([0,0])]))
                                   # transform=transforms.Compose([Normalizer(), Resizer([0,0])]),part = 1)
     else:
