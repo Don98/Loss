@@ -1,0 +1,1 @@
+{0: 'bus', 1: 'dog', 2: 'sheep', 3: 'aeroplane', 4: 'bicycle', 5: 'bird', 6: 'boat', 7: 'bottle', 8: 'car', 9: 'cat', 10: 'chair', 11: 'cow', 12: 'diningtable', 13: 'horse', 14: 'motorbike', 15: 'person', 16: 'pottedplant', 17: 'sofa', 18: 'train', 19: 'tvmonitor'}
