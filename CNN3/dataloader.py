@@ -134,7 +134,8 @@ class VocDataset(Dataset):
         self.annot_path = root_dir + "VOCdevkit/VOC" + set_name + "/Annotations/"
         self.pic_path = root_dir + "VOCdevkit/VOC" + set_name + "/JPEGImages/"
         self.clas_path = root_dir + "VOCdevkit/VOC" + set_name + "/ImageSets/"
-        self.id_path = root_dir + "VOCdevkit/VOC" + set_name + "/ImageSets/Layout/"
+        # self.id_path = root_dir + "VOCdevkit/VOC" + set_name + "/ImageSets/Layout/"
+        self.id_path = root_dir + "VOCdevkit/VOC" + set_name + "/ImageSets/Main/"
 
         # self.coco      = COCO(os.path.join(self.root_dir, 'annotations', 'instances_' + self.set_name + '.json'))
         self.image_ids = self.getImgIds()
