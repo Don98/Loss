@@ -20,7 +20,6 @@ assert torch.__version__.split('.')[0] == '1'
 import Don
 print('CUDA available: {}'.format(torch.cuda.is_available()))
 import os
-import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 def main(args=None):
@@ -210,7 +209,7 @@ def main(args=None):
     cnn3.eval()
 
     torch.save(cnn3,model_name + str(parser.epochs-1) + '.pt')
-    Don.Mess()
+    # Don.Mess()
 
 if __name__ == '__main__':
     main()
