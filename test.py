@@ -4,7 +4,8 @@ import collections
 import numpy as np
 
 import torch
-torch.cuda.set_device(1)
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# torch.cuda.set_device(1)
 import torch.optim as optim
 from torchvision import transforms
 
