@@ -108,14 +108,14 @@ class FocalLoss(nn.Module):
             targets[positive_indices, assigned_annotations[positive_indices, 4].long()] = 1
             # print("target shape is : " ,targets.shape)
             # print(targets)
-            if torch.cuda.is_available():
-                alpha_factor = torch.ones(targets.shape).cuda() * alpha
-            else:
-                alpha_factor = torch.ones(targets.shape) * alpha
+            # if torch.cuda.is_available():
+                # alpha_factor = torch.ones(targets.shape).cuda() * alpha
+            # else:
+                # alpha_factor = torch.ones(targets.shape) * alpha
             # = -(aplha)^gamma * log(classification) - (1 - alpha)^gamma * log(1 - classification) 
-            alpha_factor = torch.where(torch.eq(targets, 1.), alpha_factor, 1. - alpha_factor)
-            focal_weight = torch.where(torch.eq(targets, 1.), 1. - classification, classification)
-            focal_weight = alpha_factor * torch.pow(focal_weight, gamma)
+            # alpha_factor = torch.where(torch.eq(targets, 1.), alpha_factor, 1. - alpha_factor)
+            # focal_weight = torch.where(torch.eq(targets, 1.), 1. - classification, classification)
+            # focal_weight = alpha_factor * torch.pow(focal_weight, gamma)
 
             bce = -(targets * torch.log(classification) + (1.0 - targets) * torch.log(1.0 - classification))
 
@@ -123,8 +123,10 @@ class FocalLoss(nn.Module):
             # print(focal_weight)
             # print("BCE shape is ",bce.shape)
             # print(bce)
+            
             # cls_loss = focal_weight * torch.pow(bce, gamma)
-            cls_loss = focal_weight * bce
+            # cls_loss = focal_weight * bce
+            cls_loss = bce
             # print("CLS loss shape is : " , cls_loss.shape)
             # print(cls_loss)
 
