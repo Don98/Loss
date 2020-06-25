@@ -17,7 +17,7 @@ from CNN3 import csv_eval
 from CNN3 import voc_eval
 
 assert torch.__version__.split('.')[0] == '1'
-import Don
+# import Don
 print('CUDA available: {}'.format(torch.cuda.is_available()))
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
