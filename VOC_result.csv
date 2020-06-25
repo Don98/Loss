@@ -1,0 +1,43 @@
+class,,Sma,Mid,Lar
+dog,Ratio of total boxes%,0.033,0.45,3.003
+ ,Ratio of images included%, 0.06,1.004,7.849
+person,Ratio of total boxes%,4.573,11.975,18.291
+ ,Ratio of images included%, 5.741,16.16,31.607
+train,Ratio of total boxes%,0.01,0.297,1.749
+ ,Ratio of images included%, 0.03,0.743,4.888
+sofa,Ratio of total boxes%,0.0,0.232,2.448
+ ,Ratio of images included%, 0.0,0.622,6.896
+chair,Ratio of total boxes%,0.64,4.716,3.802
+ ,Ratio of images included%, 0.933,6.062,7.899
+car,Ratio of total boxes%,1.903,4.044,4.449
+ ,Ratio of images included%, 2.82,6.434,11.011
+pottedplant,Ratio of total boxes%,0.428,1.932,1.612
+ ,Ratio of images included%, 0.542,2.901,3.182
+diningtable,Ratio of total boxes%,0.013,0.307,1.668
+ ,Ratio of images included%, 0.03,0.592,4.778
+horse,Ratio of total boxes%,0.075,0.411,2.128
+ ,Ratio of images included%, 0.13,0.823,5.41
+cat,Ratio of total boxes%,0.016,0.183,2.278
+ ,Ratio of images included%, 0.05,0.502,6.323
+cow,Ratio of total boxes%,0.277,0.865,1.093
+ ,Ratio of images included%, 0.361,1.024,2.168
+bus,Ratio of total boxes%,0.082,0.418,1.217
+ ,Ratio of images included%, 0.151,1.014,3.222
+bicycle,Ratio of total boxes%,0.144,0.832,1.658
+ ,Ratio of images included%, 0.181,1.496,3.955
+aeroplane,Ratio of total boxes%,0.186,0.594,1.315
+ ,Ratio of images included%, 0.191,1.074,3.613
+motorbike,Ratio of total boxes%,0.114,0.63,1.733
+ ,Ratio of images included%, 0.171,1.114,4.216
+tvmonitor,Ratio of total boxes%,0.14,1.028,1.208
+ ,Ratio of images included%, 0.261,2.349,3.152
+bird,Ratio of total boxes%,0.493,1.351,1.991
+ ,Ratio of images included%, 0.391,1.686,4.908
+bottle,Ratio of total boxes%,1.044,2.425,0.744
+ ,Ratio of images included%, 1.375,3.031,1.485
+boat,Ratio of total boxes%,0.516,0.995,1.071
+ ,Ratio of images included%, 0.582,1.596,2.64
+sheep,Ratio of total boxes%,0.548,0.747,0.871
+ ,Ratio of images included%, 0.381,0.943,1.465
+All,Ratio of total boxes%,11.234,34.434,54.331
+ ,Ratio of images included%,12.707,39.416,90.103

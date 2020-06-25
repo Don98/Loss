@@ -1,0 +1,64 @@
+class,,Sma,Mid,Lar
+car,Total boxes,163,312,351
+ ,Images included, 79,177,276
+ ,boxes / image,2.0632911392405062,1.7627118644067796,1.2717391304347827
+person,Total boxes,305,935,1465
+ ,Images included, 128,391,822
+ ,boxes / image,2.3828125,2.391304347826087,1.7822384428223845
+horse,Total boxes,5,33,169
+ ,Images included, 4,24,137
+ ,boxes / image,1.25,1.375,1.2335766423357664
+bicycle,Total boxes,4,73,125
+ ,Images included, 3,46,90
+ ,boxes / image,1.3333333333333333,1.5869565217391304,1.3888888888888888
+aeroplane,Total boxes,14,49,93
+ ,Images included, 5,28,88
+ ,boxes / image,2.8,1.75,1.0568181818181819
+train,Total boxes,1,27,130
+ ,Images included, 1,23,119
+ ,boxes / image,1.0,1.173913043478261,1.0924369747899159
+diningtable,Total boxes,0,14,134
+ ,Images included, 0,12,124
+ ,boxes / image,0,1.1666666666666667,1.0806451612903225
+dog,Total boxes,1,39,231
+ ,Images included, 1,29,185
+ ,boxes / image,1.0,1.3448275862068966,1.2486486486486486
+chair,Total boxes,54,389,283
+ ,Images included, 26,163,194
+ ,boxes / image,2.076923076923077,2.3865030674846626,1.458762886597938
+cat,Total boxes,2,19,170
+ ,Images included, 2,17,151
+ ,boxes / image,1.0,1.1176470588235294,1.1258278145695364
+bird,Total boxes,30,84,180
+ ,Images included, 10,40,148
+ ,boxes / image,3.0,2.1,1.2162162162162162
+boat,Total boxes,38,86,84
+ ,Images included, 18,38,64
+ ,boxes / image,2.111111111111111,2.263157894736842,1.3125
+pottedplant,Total boxes,25,154,126
+ ,Images included, 13,85,83
+ ,boxes / image,1.9230769230769231,1.811764705882353,1.5180722891566265
+tvmonitor,Total boxes,14,83,94
+ ,Images included, 9,60,82
+ ,boxes / image,1.5555555555555556,1.3833333333333333,1.146341463414634
+sofa,Total boxes,0,20,198
+ ,Images included, 0,17,175
+ ,boxes / image,0,1.1764705882352942,1.1314285714285715
+motorbike,Total boxes,7,55,131
+ ,Images included, 3,31,106
+ ,boxes / image,2.3333333333333335,1.7741935483870968,1.2358490566037736
+bottle,Total boxes,93,178,67
+ ,Images included, 36,97,42
+ ,boxes / image,2.5833333333333335,1.8350515463917525,1.5952380952380953
+bus,Total boxes,3,33,95
+ ,Images included, 3,27,85
+ ,boxes / image,1.0,1.2222222222222223,1.1176470588235294
+sheep,Total boxes,69,58,64
+ ,Images included, 11,26,35
+ ,boxes / image,6.2727272727272725,2.230769230769231,1.8285714285714285
+cow,Total boxes,19,72,94
+ ,Images included, 10,27,56
+ ,boxes / image,1.9,2.6666666666666665,1.6785714285714286
+All,Total boxes%,847,2713,4284
+ ,Images included%,312,1027,2259
+ ,boxes / image,2.71474358974359,2.641674780915287,1.8964143426294822

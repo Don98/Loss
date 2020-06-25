@@ -1,0 +1,43 @@
+class,,Sma,Mid,Lar
+dog,Ratio of total boxes%,10,138,920
+ ,Ratio of images included%, 6,100,782
+person,Ratio of total boxes%,1401,3669,5604
+ ,Ratio of images included%, 572,1610,3149
+train,Ratio of total boxes%,3,91,536
+ ,Ratio of images included%, 3,74,487
+sofa,Ratio of total boxes%,0,71,750
+ ,Ratio of images included%, 0,62,687
+chair,Ratio of total boxes%,196,1445,1165
+ ,Ratio of images included%, 93,604,787
+car,Ratio of total boxes%,583,1239,1363
+ ,Ratio of images included%, 281,641,1097
+pottedplant,Ratio of total boxes%,131,592,494
+ ,Ratio of images included%, 54,289,317
+diningtable,Ratio of total boxes%,4,94,511
+ ,Ratio of images included%, 3,59,476
+horse,Ratio of total boxes%,23,126,652
+ ,Ratio of images included%, 13,82,539
+cat,Ratio of total boxes%,5,56,698
+ ,Ratio of images included%, 5,50,630
+cow,Ratio of total boxes%,85,265,335
+ ,Ratio of images included%, 36,102,216
+bus,Ratio of total boxes%,25,128,373
+ ,Ratio of images included%, 15,101,321
+bicycle,Ratio of total boxes%,44,255,508
+ ,Ratio of images included%, 18,149,394
+aeroplane,Ratio of total boxes%,57,182,403
+ ,Ratio of images included%, 19,107,360
+motorbike,Ratio of total boxes%,35,193,531
+ ,Ratio of images included%, 17,111,420
+tvmonitor,Ratio of total boxes%,43,315,370
+ ,Ratio of images included%, 26,234,314
+bird,Ratio of total boxes%,151,414,610
+ ,Ratio of images included%, 39,168,489
+bottle,Ratio of total boxes%,320,743,228
+ ,Ratio of images included%, 137,302,148
+boat,Ratio of total boxes%,158,305,328
+ ,Ratio of images included%, 58,159,263
+sheep,Ratio of total boxes%,168,229,267
+ ,Ratio of images included%, 38,94,146
+All,Ratio of total boxes%,3442,10550,16646
+ ,Ratio of images included%,1266,3927,8977
