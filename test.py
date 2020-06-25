@@ -205,6 +205,7 @@ def main(args=None):
         scheduler.step(np.mean(epoch_loss))
 
         torch.save(cnn3.module, '{}_cnn3_{}.pt'.format(parser.dataset, epoch_num))
+        torch.save(cnn3,model_name + str(epoch_num) + '.pt')
 
     cnn3.eval()
 
