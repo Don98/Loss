@@ -154,9 +154,9 @@ def main(args=None):
                 classification_loss = classification_loss.mean()
                 regression_loss = regression_loss.mean()
                 # print(classification_loss,regression_loss)
-                if(num == 2):
-                    exit()
-                num += 1
+                # if(num == 2):
+                    # exit()
+                # num += 1
                 loss = classification_loss + regression_loss
 
                 if bool(loss == 0):
