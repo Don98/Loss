@@ -20,9 +20,11 @@ assert torch.__version__.split('.')[0] == '1'
 import Don
 print('CUDA available: {}'.format(torch.cuda.is_available()))
 import os
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 def main(args=None):
-    model_name = "model_final"
+    model_name = "model_final1"
     if not os.path.isdir(model_name):
         os.mkdir(model_name)
     parser = argparse.ArgumentParser(description='Simple training script for training a cnn3 network.')
@@ -153,9 +155,9 @@ def main(args=None):
                 classification_loss = classification_loss.mean()
                 regression_loss = regression_loss.mean()
                 # print(classification_loss,regression_loss)
-                # if(num == 5):
-                    # exit()
-                # num += 1
+                if(num == 2):
+                    exit()
+                num += 1
                 loss = classification_loss + regression_loss
 
                 if bool(loss == 0):
@@ -181,24 +183,24 @@ def main(args=None):
                 print(e)
                 continue
         os.chdir("../")
-        # if parser.dataset == 'coco':
+        if parser.dataset == 'coco':
 
-            # print('Evaluating dataset')
+            print('Evaluating dataset')
 
-            # coco_eval.evaluate_coco(dataset_val, cnn3)
+            coco_eval.evaluate_coco(dataset_val, cnn3)
 
-        # elif parser.dataset == 'csv' and parser.csv_val is not None:
+        elif parser.dataset == 'csv' and parser.csv_val is not None:
 
-            # print('Evaluating dataset')
+            print('Evaluating dataset')
 
-            # mAP = csv_eval.evaluate(dataset_val, cnn3)
+            mAP = csv_eval.evaluate(dataset_val, cnn3)
 
-        # elif parser.dataset == 'voc':
+        elif parser.dataset == 'voc':
 
 
-            # print('Evaluating dataset')
+            print('Evaluating dataset')
 
-            # mAP = voc_eval.evaluate(dataset_val, cnn3)
+            mAP = voc_eval.evaluate(dataset_val, cnn3,epoch_num)
 
         scheduler.step(np.mean(epoch_loss))
 

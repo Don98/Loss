@@ -238,7 +238,7 @@ class FocalLoss(nn.Module):
                         # start = str(regression_loss[i]).index("[")
                     # if(str(regression_loss[i])[end] != "["):
                         # end = str(regression_loss[i]).index("]")
-                    f.write(str(IoU_argmax[positive_indices][i].item()) + " " + str(regression_loss[i]) + "\n")
+                    f.write(str(IoU_argmax[positive_indices][i].item()) + " " + str(regression_loss[i]) + " " + str(IoU_max[positive_indices][i].item()) + "\n")
                 
             else:
                 if torch.cuda.is_available():
