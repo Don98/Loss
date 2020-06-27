@@ -40,8 +40,8 @@ def main(args=None):
     cnn3.training = False
     cnn3.eval()
     cnn3.module.freeze_bn()
-
-    voc_eval.evaluate(dataset_val, cnn3,parser.model_path[:-4])
+    print(parser.model_path[:-4])
+    voc_eval.evaluate(dataset_val, cnn3,model_path = parser.model_path[:-4])
 
 if __name__ == '__main__':
     main()
