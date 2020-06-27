@@ -152,11 +152,11 @@ def _get_annotations(generator):
 def evaluate(
     generator,
     cnn3,
+    model_path,
     iou_threshold=0.5,
     score_threshold=0.05,
     max_detections=100,
     save_path=None,
-    model_path
 ):
     """ Evaluate a given dataset using a given cnn3.
     # Arguments
