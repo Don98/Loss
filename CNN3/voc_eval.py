@@ -155,7 +155,8 @@ def evaluate(
     iou_threshold=0.5,
     score_threshold=0.05,
     max_detections=100,
-    save_path=None
+    save_path=None,
+    epoch_num
 ):
     """ Evaluate a given dataset using a given cnn3.
     # Arguments
@@ -369,12 +370,15 @@ def evaluate(
     
     # print('\nmAP:',ALL_average_precision)
     table = PrettyTable(['categories','AP','APs','APm','APl'])
+    f = open("val_result" + str(epoch_num) + ".txt","w")
     for label in range(generator.num_classes()):
         label_name = generator.label_to_name(label)
         # print('{} | \tAP:{} \t| \tAPs:{} \t| \tAPm:{} \t| \tAPl:{} \t|'.format(label_name, average_precisions[label][0], average_precisions[label][2], average_precisions[label][4], average_precisions[label][6]))
         table.add_row([label_name, round(average_precisions[label][0],3), round(average_precisions[label][2],3), round(average_precisions[label][4],3), round(average_precisions[label][6],3)])
     
     table.add_row(["ALL:",round(ALL_average_precision,3)] + [round(i,3) for i in three_ap])
+    f.write(str(table))
+    f.close()
     print(table)
     return average_precisions
 
